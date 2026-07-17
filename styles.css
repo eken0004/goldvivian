@@ -224,6 +224,48 @@ img {
   align-items: start;
 }
 
+.experience {
+  margin-top: 2rem;
+}
+
+.experience h3 {
+  margin: 0 0 1rem;
+}
+
+.experience-item {
+  padding: 1.25rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.experience-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.experience-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.experience-item ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.experience-item li {
+  margin-bottom: 0.5rem;
+}
+
+.experience-item li:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 900px) {
   .hero-grid,
   .two-col,
