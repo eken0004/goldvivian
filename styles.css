@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
     grid-template-columns: minmax(0, 1fr) minmax(0, 540px);
 body {
@@ -523,22 +524,16 @@ img {
 @media (max-width: 620px) {
   .nav {
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     min-height: 64px;
-    padding: 0;
+    padding: 1rem 0;
   }
 
   .nav-links {
-    flex-wrap: nowrap;
-    gap: 0.8rem;
-    overflow-x: auto;
-    padding: 0.25rem 0;
-    scrollbar-width: none;
-    white-space: nowrap;
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
+    padding: 0.5rem 0;
   }
 
   .brand {
