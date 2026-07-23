@@ -11,12 +11,13 @@
 
 * {
   box-sizing: border-box;
+  min-width: 0;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
+    grid-template-columns: minmax(0, 1fr) minmax(0, 540px);
 body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
@@ -62,6 +63,20 @@ img {
 .container {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: min(1400px, calc(100% - 6rem));
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) 540px;
+  }
+
+  .hero h1 {
+    font-size: 6rem;
+  }
 }
 
 .site-header {
@@ -116,6 +131,12 @@ img {
 .two-col {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
+}
+
+@media (min-width: 1600px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) 540px;
+  }
 }
 
 .hero h1,
@@ -185,6 +206,7 @@ img {
 }
 
 .hero-card {
+  min-width: 0;
   padding: 1rem;
 }
 
