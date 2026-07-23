@@ -564,3 +564,18 @@ img {
     height: 220px;
   }
 }
+
+/* Hero Animation */
+.hero-grid > div { animation: fadeInUp 0.8s ease-out forwards; }
+.hero-image { animation: fadeInScale 1s ease-out forwards; opacity: 0; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInScale { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+/* Portfolio Card Hover */
+.card-link { transition: transform 0.3s ease; display: inline-block; }
+.card:hover img { transform: scale(1.05); transition: transform 0.4s ease; }
+.card img { transition: transform 0.4s ease; }
+.card:hover .card-link { transform: translateX(5px); }
+/* Certificate Styles */
+.certificate { margin: 0; text-align: center; }
+.certificate figcaption { margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted, #888); }
+
